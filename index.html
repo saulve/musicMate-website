@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+${require('./partials/head.html')}
+
+<body>
+    ${require('./partials/nav.html')}
+    <div class="intro row flex flex-column flex-center">
+        <h1 class="text-center">Things should be easier</h1>
+        <p class="text-justify">${require('./strings.js').intro}</p>
+    </div>
+    <div class="presentation row flex align-items">
+        <div class="presentation_desc">
+            <h2 class="text-center">Introducing musicMate</h2>
+            <p class="text-justify">${require('./strings.js').presentation}</p>
+            <div class="flex flex-column presentation_desc_footer">
+                <h3 class="align-center">Integrated with</h3>
+                <img class="align-center" src="${require('./images/spotify.png').src}" alt="">
+            </div>
+        </div>
+        <div class="presentation_demo">
+            <video src="demos/demo_1.mp4" type="video/mp4" loop autoplay></video>
+        </div>
+    </div>
+    ${require('./partials/footer.html')}
+</body>
+
+</html>
