@@ -1,0 +1,39 @@
+.flex {
+  display: flex;
+  &-end {
+    justify-content: flex-end;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-column {
+    flex-direction: column;
+  }
+}
+.align {
+  &-center {
+    align-self: center;
+  }
+  &-items {
+    align-items: center;
+  }
+}
+.row {
+  min-height: 300px;
+}
+.container {
+  padding: 0 2rem;
+}
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-justify {
+    text-align: justify;
+  }
+}
+.border-rad {
+  &--std {
+    border-radius: $std-border-radius;
+  }
+}
