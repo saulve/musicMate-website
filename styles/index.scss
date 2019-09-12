@@ -16,6 +16,16 @@ p {
   }
 }
 
+.text-card {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    padding: 0 10em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 20em;
+  }
+}
+
 .leadspace {
   position: relative;
   min-height: 350px;
